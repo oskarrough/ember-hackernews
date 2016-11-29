@@ -1,0 +1,19 @@
+<h3 class="Item-title">
+  <a href="{{item.url}}">
+    {{item.title}}
+  </a>
+  <small>
+    (<a href="https://news.ycombinator.com/from?site={{url-host item.url}}" target="_blank">{{url-host item.url}}</a>)
+  </small>
+</h3>
+
+<p class="Item-meta">
+  by {{link-to item.by "user" item.by}}
+  <time datetime="{{item.time}}">{{moment-from-now (unix item.time)}}</time> |
+  {{#link-to "item" item.id}}
+    {{item.descendants}} comments
+  {{/link-to}}
+</p>
+
+{{yield}}
+

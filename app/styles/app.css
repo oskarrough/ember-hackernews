@@ -1,0 +1,67 @@
+/* Base styling */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 1rem 0;
+}
+
+h3 small {
+  font-weight: normal;
+}
+
+main,
+footer {
+  margin: 0 0.5rem;
+}
+
+nav a {
+  color: blue;
+  display: inline-block;
+  padding: 0.5rem;
+}
+
+a.active {
+  color: black;
+  text-decoration: none;
+}
+
+/* Item styling */
+
+.Item {}
+
+.Item-title {
+  margin-bottom: 0;
+}
+
+.Item-meta {
+  margin-top: 0;
+}
+
+.Item-title a {
+  text-decoration: none;
+}
+
+.Item-title small a {
+  color: black;
+}
+
+.Item-meta a {
+  color: black;
+}
+

@@ -1,0 +1,12 @@
+{{model.length}} comments
+
+{{#each model as |comment|}}
+  <div class="Comment">
+    <p>
+      {{link-to comment.by "user" comment.by}} {{moment-from-now (unix comment.time)}}<br>
+      {{comment.text}}
+    </p>
+  </div>
+{{/each}}
+
+{{outlet}}

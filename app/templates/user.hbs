@@ -1,0 +1,13 @@
+<h1>
+  {{model.id}}
+</h1>
+
+<p>
+  Created: <time>{{moment-from-now model.created}}</time><br>
+  Karma: {{model.karma}}
+</p>
+
+<p>{{link-to "Stories" "user.stories" model}}</p>
+
+{{outlet}}
+
